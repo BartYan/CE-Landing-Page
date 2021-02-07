@@ -1,0 +1,88 @@
+//BACK TO TOP BUTTON
+.button
+	+txt-big
+	margin-top: 25px
+	background: $orange-color
+	box-shadow: 0px 4px 10px rgba(237, 111, 33, 0.4)
+	border-radius: 10px
+	border: none
+	padding: 10px 20px
+	font-style: normal
+	font-weight: 600
+	display: flex
+	align-items: center
+	text-align: center
+	letter-spacing: 0.01em
+	color: $white-color
+
+.button:hover
+	cursor: pointer
+
+.button:focus
+	outline: none
+	border: none
+
+.button_contact
+	margin: 0 0 20px 0
+
+.phone_button
+	display: none
+	position: fixed
+	bottom: 5%
+	right: 15px
+	z-index: 1000 !important
+	@media (min-width: 1280px)
+		display: block
+	&-circle
+		position: relative
+		width: 65px
+		height: 65px
+		background: $orange-color
+		border-radius: 50%
+		border: none
+		text-decoration: none
+		box-shadow: 0px 8px 14px rgba(152, 192, 214, 0.4)
+		z-index: 1000 !important
+		&--img
+			+centered
+	
+	&-circle:hover
+		cursor: pointer
+	
+	&-circle:active
+		border: none
+    	outline: none
+	
+	&-circle:focus
+    	border: none
+    	outline: none
+
+//Show form card button
+.form_button
+	display: none
+	position: fixed
+	top: 5%
+	right: 0
+	width: 122px
+	height: 60px
+	z-index: 1000 !important
+	background: $grey-color
+	cursor: pointer
+	transition: 2s
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+	border-radius: 10px 0px 0px 10px
+	@media (min-width: 1280px)
+		display: flex
+	&-txt
+		font-style: normal
+		font-weight: 600
+		font-size: 12px
+		line-height: 14px
+		display: flex
+		align-items: center
+		letter-spacing: 0.02em
+		color: $white-color
+		padding-left: 16px
+	&-img
+		width: 25px
+		padding-right: 14px

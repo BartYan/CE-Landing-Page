@@ -1,0 +1,104 @@
+.about
+	position: relative
+	padding: 50px
+	z-index: 999
+	@media (min-width: 1280px)
+		margin-bottom: 50px
+		width: 100%
+	&_top
+		width: 100%
+		@media (min-width: 1280px)
+			display: flex
+		&-box
+			width: 100%
+			@media (min-width: 1280px)
+				width: 50%
+	
+	&_bottom
+		width: 100%
+		@media (min-width: 1280px)
+			display: flex
+			margin-top: 50px
+		&-box
+			width: 100%
+			@media (min-width: 1280px)
+				width: 50%
+
+	&_txtSmall
+		font-family: Roboto
+		font-style: normal
+		font-weight: 300
+		font-size: 12px
+		line-height: 140%
+		color: $lightGrey-color
+		padding: 0 0 40px 0
+		@media (min-width: 1280px)
+			padding: 30px 0 0 0
+			font-size: 14px
+			line-height: 140%
+			width: 80%
+
+	&_img
+		margin: 50px 0 10px auto
+		width: 324px
+		height: auto
+		border-radius: 10px 0px 0px 10px
+		@media (min-width: 768px)
+			padding: 50px
+			width: 100%
+			margin: 0
+		@media (min-width: 1280px)
+			padding: 0
+
+.card
+	display: flex
+	width: 100%
+	padding: 32px 0 0 0
+	@media (min-width: 768px)
+		padding: 45px 0 0 0
+	@media (min-width: 1280px)
+		padding: 55px 0 0 0
+	@media (min-width: 1800px)
+		padding: 100px 0 0 0
+
+	&_icon
+		position: relative
+		width: 20%
+		@media (min-width: 1280px)
+			width: 10%
+		&-circle
+			+centered
+			width: 52.79px
+			height: 52.79px
+			background: $blue-color
+			border-radius: 50%
+			box-shadow: 0px 8px 14px rgba(152, 192, 214, 0.4)
+			@media (min-width: 1280px)
+				width: 61.08px
+				height: 61.08px
+			@media (min-width: 1800px)
+				width: 80px
+				height: 80px
+			&--img
+				+centered
+
+	&_txt
+		width: 80%
+		padding: 0 0 0 20px
+		@media (min-width: 1280px)
+			width: 70%
+		&-p
+			+txt-big
+			font-style: normal
+			font-weight: normal
+			color: #575756
+			@media (min-width: 1280px)
+				font-size: 16px
+				line-height: 20px
+
+.orange
+	background: $orange-color
+	box-shadow: 0px 8px 14px rgba(237, 111, 33, 0.4)
+
+.txt-orange
+	color: $orange-color

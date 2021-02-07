@@ -1,0 +1,165 @@
+// Form ovarlay 
+.form
+	display: none
+	position: fixed
+	top: 5%
+	right: 0
+	width: 394px
+	height: auto
+	background-color: $grey-color
+	color: $white-color
+	z-index: 1000
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+	border-radius: 10px 0px 0px 10px
+	overflow-x: hidden
+	@media (min-width: 1280px)
+		display: block
+	&_box
+		padding: 50px 30px
+		&-head
+			font-style: normal
+			font-weight: 600
+			font-size: 26px
+			line-height: 28px
+			color: $white-color
+		&-txt
+            font-size: 14px
+            line-height: 18px
+            +Roboto-normal
+            color: $formGrey-color
+            padding: 20px 0
+        
+.overlay
+    transition: 0.5s !important	
+
+.closebtn 
+    position: absolute
+    top: -20px
+    right: 20px
+    font-size: 60px
+    z-index: 1000
+
+.accordion
+	display: block
+  	width: 100%
+  	border: none
+  	text-align: left
+  	outline: none
+  	transition: 0.4s
+  	background-color: transparent
+  	+Roboto-normal
+	font-size: 10px
+	line-height: 12px
+	color: #78ACC9
+	margin: -32px 0 20px 30px 
+	cursor: pointer !important
+	&-img
+        width: 10px
+        height: 5px
+        padding-left: 7px
+        display: inline-block
+
+.panel
+	padding: 0 18px 20px 30px
+	display: none
+	&-font
+		+Roboto-normal
+		font-size: 10px
+		line-height: 12px
+		color: $formGrey-color
+
+//Error messages 
+.login_form #check_error
+	+error-msg
+	
+.login_form #checkTwo_error
+	+error-msg
+
+.login_form #checkThree_error
+	+error-msg
+
+
+//Inputs
+label 
+	width: 100%
+	display: block
+	padding: 5px 0
+	color: $blueForm-color
+	+Roboto-normal
+	font-size: 10px
+    line-height: 12px
+
+.input 
+	font-size: 14px
+	padding: 5px 0
+	width: 100% 
+	border: 0
+	border-bottom: 1px solid $lightGrey-color
+	outline: 0
+	background: transparent
+	outline: none
+	-webkit-appearance: none
+  	appearance: none
+
+.input:focus
+  	outline: 0
+  	border-bottom: 1px solid $orange-color
+
+
+::placeholder
+	color: $white-color
+	opacity: 1
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 140%
+
+::-ms-input-placeholder
+	color: $white-color
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 140%
+
+::-ms-input-placeholder 
+	color: $white-color
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 140%
+
+.input_flex
+	display: flex
+	height: 50px
+	&-span
+		font-size: 10px
+		line-height: 12px
+        +Roboto-normal
+		color: $formGrey-color
+	&-post
+        width: 30% 
+        padding: 0 40px 0 0
+	&-phone
+        width: 70%
+	&-checkbox
+		width: 21.73px
+		height: 22.3px
+		border: 4px solid transparent
+
+//ChechBox swaping imgs 
+input[type=checkbox]
+	display:none !important
+
+input[type=checkbox] + label
+	background-image: url("../img/unchecked.png")
+	width: 21.73px
+	height: 22.3px
+	padding: 0 0 0 0px
+	cursor: pointer
+
+input[type=checkbox]:checked + label
+	background-image: url("../img/checked.png")
+	width: 21.73px
+	height: 22.3px
+	padding: 0 0 0 0px
+	cursor: pointer

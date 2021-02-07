@@ -1,0 +1,47 @@
+.welcome
+	position: relative
+	padding: 50px
+	z-index: 999
+	&_left
+		@media (min-width: 1280px)
+			width: 70%
+		&-logo
+			&--one
+				@media (min-width: 1280px)
+					display: none
+			&--two
+				display: none
+				@media (min-width: 1280px)
+					display: block
+					padding: 30px 40px 30px 0
+			@media (min-width: 1280px)
+				display: flex
+				width: 62%
+	&_right
+		@media (min-width: 1280px)
+			width: 30%
+	
+	&_txt
+		+txt-big
+		font-weight: normal
+		font-style: normal
+		padding: 19px 0 0 0
+		@media (min-width: 1280px)
+			font-size: 16px
+			line-height: 20px
+
+	&_imgMobile
+		width: 324px
+		height: 257px
+		margin: 30px 0 0 -55px
+		border-radius: 0px 10px 10px 0px
+		@media (min-width: 768px)
+			display: none
+	&_imgDesktop
+		display: none
+		width: 100%
+		height: auto
+		margin: 30px 0 0 -55px
+		border-radius: 0px 10px 10px 0px
+		@media (min-width: 768px)
+			display: block	

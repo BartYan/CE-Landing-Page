@@ -1,0 +1,288 @@
+<!Doctype html>
+<html lang="pl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--CSS -->
+  <link rel="stylesheet" href="css\style.min.css">
+
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+
+  <title>Columbus Energy - Dostęp do przyszłości</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Columbus Energy - oferta dla firm" />
+  <meta name="keywords"
+    content="Columbus, Columbus Energy, panele fotowoltaiczne, fotowoltaika, dostęp do przyszłości, pompa ciepła, magazyn energii" />
+</head>
+
+<body>
+  <!--HEADER SECTION-->
+  <header class="section">
+    <div class="welcome">
+      <div class="welcome_left">
+        <div class="welcome_left-logo">
+          <img class="welcome_left-logo--one" src="img/logo.png" alt="Columbus Logo">
+          <img class="welcome_left-logo--two" src="img/logo-two.svg" alt="Columbus Logo">
+          <h1 class="head">pracownicy inwestują w przyszłość<span class="head_dot"> .</span></h1>
+        </div>
+        <h3 class="headThird">firma XYZ</h3>
+        <p class="welcome_txt">Firma xxx już inwestuje w ekologiczne rozwiązania. W drodze do bycia EKO, chce wspierać
+          również swoich pracowników. To właśnie z myślą o nich Columbus przygotował wyjątkową ofertę <strong>z RABATEM
+            na
+            instalację fotowoltaiczną.</strong></p>
+        <img class="welcome_imgMobile" src="img/house-mobile.png" alt="Dom z panelami fotowoltaicznymi">
+        <img class="welcome_imgDesktop" src="img/house-desktop.png" alt="Dom z panelami fotowoltaicznymi">
+      </div>
+      <div class="welcome_right">
+      </div>
+    </div>
+
+    <div class="phone_button">
+      <button class="phone_button-circle">
+        <img class="phone_button-circle--img" src="img/phone.svg" alt="Ikonka słuchawki">
+      </button>
+    </div>
+    <div class="form_button" onclick="openForm()">
+      <p class="form_button-txt">poznaj ofertę</p>
+      <img class="form_button-img" src="img/post.svg" alt="Ikonka koperty">
+    </div>
+  </header>
+
+  <!--FORM SECTION-->
+  <div class="form overlay" id="form_overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeForm()"><img src="img/arrow.svg" alt="strzałka - schowaj formularz"></a>
+    <div class="form_box">
+      <h3 class="form_box-head">Poznaj ofertę lorem ipsum dolor sit</h3>
+      <p class="form_box-txt">Sed velit tortor, laoreet at venenatis et, volutpat ac felis.et, volutpat ac felis.</p>
+
+      <form class="login_form" action="index.html" method="get" name="form" onsubmit="return validated()">
+        <label for="name">imię i nazwisko</label>
+        <input class="input" id="name" type="text" name="name" placeholder="Lorem ipsum">
+        <br></br>
+        <label for="email">adres e-mail</label>
+        <input class="input" type="email" name="email" placeholder="lorem@lorem.pl">
+        <br></br>
+
+        <div class="input_flex">
+          <div class="input_flex-post">
+            <label for="post_code">Kod pocztowy:</label>
+            <input class="input" id="post_code" type="text" name="post_code" size="8" placeholder="00-000"
+              title="Format xx-xxx">
+          </div>
+          <div class="input_flex-phone">
+            <label for="phone">numer telefonu</label>
+            <input class="input" id="phone" type="tel" name="phone" placeholder="000 000 000">
+          </div>
+        </div>
+        <br></br>
+        <div class="input_flex">
+          <div class="input_flex-checkbox">
+            <input type='checkbox' name='checkOne' value='checkOne' id="checkOne" />
+            <label for="checkOne"></label>
+          </div>
+          <div>
+            <span class="input_flex-span">Zgoda na marketing mailowy Columbus Energy S.A</span>
+          </div>
+        </div>
+        <a class="accordion" id="accordionOne">czytaj więcej <span class="accordion-img"><img src="img/arrowDown.svg" id="arrowone"/></span></a>
+        <div class="panel">
+          <p class="panel-font">Wyrażam zgodę na otrzymywanie od Columbus Energy S.A. z siedzibą w Krakowie, drogą
+            elektroniczną na podany przeze mnie adres e-mail, informacji handlowych dotyczących produktów i usług
+            oferowanych przez Columbus Energy S.A.</p>
+        </div>
+
+        <div class="input_flex">
+          <div class="input_flex-checkbox">
+            <input type='checkbox' name='checkTwo' value='checkTwo' id="checkTwo" />
+            <label for="checkTwo"></label>
+          </div>
+          <div>
+            <span class="input_flex-span">Zgoda na marketing mailowy Columbus Energy S.A</span>
+          </div>
+        </div>
+        <a class="accordion" id="accordionTwo">czytaj więcej <span class="accordion-img"><img src="img/arrowDown.svg" id="arrowtwo"/></span></a>
+        <div class="panel">
+          <p class="panel-font">Wyrażam zgodę na otrzymywanie od Columbus Energy S.A. z siedzibą w Krakowie, drogą
+            elektroniczną na podany przeze mnie adres e-mail, informacji handlowych dotyczących produktów i usług
+            oferowanych przez Columbus Energy S.A.</p>
+        </div>
+
+        <div id="check_error">Podanie danych osobowych w przypadku tego celu przetwarzania jest dobrowolne, ale do
+          zrealizowania kontaktu z naszej strony konieczne jest zaznaczenie powyższych zgód</div>
+        <div id="checkTwo_error">Wyrażenie zgody na marketing mailowy nie jest obowiązkowe, ale pamiętaj, że jeśli jej
+          nie zaznaczysz, nie będziemy mogli do Ciebie wysyłać maili.</div>
+        <div id="checkThree_error">Wyrażenie zgody na marketing telefoniczny nie jest obowiązkowe, jednak konieczne,
+          abyśmy mogli przedstawić Ci ofertę w trakcie rozmowy.</div>
+
+        <button id="submit" class="button" type="submit">umów się na spotkanie</button>
+      </form>
+    </div>
+  </div>
+
+  <!--ABOUT OFFER SECTION-->
+  <section>
+    <div class="about">
+
+      <div class="about_top">
+        <div class="about_top-box">
+          <h2 class="head">Columbus<span class="head_dot"> .</span></h2>
+          <h4 class="headFourth">Jesteśmy po to by zadbać o Twoje potrzeby.</h4>
+        </div>
+
+        <div class="about_top-box">
+          <p class="about_txtSmall">Dzięki idealnie dopasowanej do Twoich potrzeb mocy, obniżysz swoje rachunki za
+            energię elektryczną nawet o 90%. Czysty, darmowy prąd ze słońca to najlepsze rozwiązanie by zadbać o
+            środowisko,
+            a przy tym o swój portfel.</p>
+        </div>
+      </div>
+
+      <div class="about_bottom">
+        <div class="about_bottom-box">
+          <h4 class="headfifth">Z nami zyskujesz:</h4>
+
+          <div class="card">
+            <div class="card_icon">
+              <div class="card_icon-circle">
+                <img class="card_icon-circle--img" src="img/panel-icon.svg" alt="Ikonka panelu fotowoltaicznego">
+              </div>
+            </div>
+            <div class="card_txt">
+              <p class="card_txt-p"><strong>wysokowydajną technologię MWT</strong> w eleganckiej odsłonie Full Black,
+                czyli
+                panele monokrystaliczne od Sunport Power (360 Wp),</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_icon">
+              <div class="card_icon-circle">
+                <img class="card_icon-circle--img" src="img/columbus-icon.svg" alt="Ikonka Columbus">
+              </div>
+            </div>
+            <div class="card_txt">
+              <p class="card_txt-p"><strong>15-letnią Gwarancja Totalna</strong> na wszystkie komponenty instalacji za 0
+                złotych,</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_icon">
+              <div class="card_icon-circle">
+                <img class="card_icon-circle--img" src="img/wallet-icon.svg" alt="Ikonka portfel">
+              </div>
+            </div>
+            <div class="card_txt">
+              <p class="card_txt-p">korzystne finansowanie z <strong>RRSO 4,5%</strong> ze stałą rata na 10 lat,</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_icon">
+              <div class="card_icon-circle">
+                <img class="card_icon-circle--img" src="img/hand-icon.svg" alt="Ikonka ręki oznaczjąca opiekę">
+              </div>
+            </div>
+            <div class="card_txt">
+              <p class="card_txt-p">kompleksową opiekę <strong>Columbus Care</strong>, która została doceniona godłem
+                “Teraz
+                Polska”</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_icon">
+              <div class="card_icon-circle">
+                <img class="card_icon-circle--img" src="img/tools-icon.svg" alt="Ikonka narzędzi">
+              </div>
+            </div>
+            <div class="card_txt">
+              <p class="card_txt-p"><strong>realizację w 1 dzień</strong>, montaż rozpoczniemy do 10 dni od
+                sfinalizowania
+                transakcji,</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_icon">
+              <div class="card_icon-circle orange">
+                <img class="card_icon-circle--img" src="img/prom-icon.svg" alt="Ikonka rabat">
+              </div>
+            </div>
+            <div class="card_txt">
+              <p class="card_txt-p"><span class="txt-orange"><strong>wyjątkowy RABAT</strong></span> - skontaktuj się z
+                nami
+                by poznać szczegóły - oferta jest ograniczona czasowo - <strong>nie zwlekaj!</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="about_bottom-box">
+          <img class="about_img" src="img/houseTwo.png" alt="Dom z panelami fotowoltaicznymi">
+        </div>
+      </div>
+  </section>
+
+  <!--CONTACT & INFO SECTION-->
+  <section class="section">
+    <div class="contact">
+      <div class="contact_box">
+        <div class="contact_box-txt">
+          <h2 class="head contact_head">Codziennie dajemy dostęp do przyszłości<span class="head_dot">.</span></h2>
+          <p class="contact_txtSmall">Każdego dnia ponad 100 osób wkracza z nami w świat zielonej energii. Zacznij
+            działać
+            odpowiedzialnie i zadbaj o środowisko - dołącz do ponad 30 000 klientów Columbus w całej Polsce.
+            <br></br>
+            Chcesz skorzystać z rabatu? Zadzwoń i umów się na bezpłatne spotkanie z naszym doradcą. Pamiętaj promocja
+            już
+            niebawem się zakończy. Pośpiesz się by otrzymać zniżkę.
+          </p>
+          <button class="button button_contact">umów się na spotkanie</button>
+        </div>
+      </div>
+
+      <div class="contact_box">
+        <img class="contact_img" src="img/family.png" alt="zdjęcie rodziny na tle domu z fotowoltaiką">
+        <img class="contact_imgLarge" src="img/family2.png" alt="zdjęcie rodziny na tle domu z fotowoltaiką">
+      </div>
+    </div>
+
+    <div class="pattern"></div>
+  </section>
+
+  <!--FOOTER SECTION-->
+  <footer class="footer">
+
+    <div class="footer_mobile">
+      <img src="img/logo.png" alt="Columbus Logo">
+      <div class="footer_mobile-box">
+        <a href="#" class="footer_mobile-box--item">Polityka Prywatności</a>
+        <a href="#" class="footer_mobile-box--item">Polityka Ciastek</a>
+      </div>
+      <p class="footer_mobile-box--cr">Copyrights Columbus 2020</p>
+    </div>
+
+    <div class="footer_desktop">
+      <div class="footer_desktop-box">
+        <img class="footer_desktop-box--item" src="img/logo.png" alt="Columbus Logo">
+        <p class="footer_desktop-box--item footer_desktop-box--cr">Copyrights Columbus 2020</p>
+      </div>
+      <div class="footer_desktop-box">
+        <a href="#" class="footer_desktop-box--item">Polityka Prywatności</a>
+        <a href="#" class="footer_desktop-box--item">Polityka Ciastek</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/form.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/form_scrolling.js"></script>
+  <script src="js/openForm.js"></script>
+</body>
+</html>
